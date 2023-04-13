@@ -137,3 +137,4 @@ Thumbs.db
 src/Id
 src/Hash
 src/amqp-callback
+src/user-entity

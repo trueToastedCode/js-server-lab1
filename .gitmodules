@@ -10,3 +10,7 @@
 	path = src/amqp-callback
 	url = https://github.com/trueToastedCode/js-server-stuff.git
 	branch = amqp-callback
+[submodule "src/user-entity"]
+	path = src/user-entity
+	url = https://github.com/trueToastedCode/js-server-lab1.git
+	branch = user-entity

@@ -1,0 +1,12 @@
+[submodule "src/Id"]
+	path = src/Id
+	url = https://github.com/trueToastedCode/js-server-stuff.git
+	branch = Id
+[submodule "src/Hash"]
+	path = src/Hash
+	url = https://github.com/trueToastedCode/js-server-stuff.git
+	branch = Hash
+[submodule "src/amqp-callback"]
+	path = src/amqp-callback
+	url = https://github.com/trueToastedCode/js-server-stuff.git
+	branch = amqp-callback

@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodeman --exec babel-node src/index.js",
+    "build": "npm run clean && babel src -d dist",
+    "clean": "rimraf dist",
+    "start": "npm run clean && npm run build && cd dist && node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.21.4",
+    "nodemon": "^2.0.22",
+    "rimraf": "^4.4.1"
+  },
+  "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.0",
+    "amqplib": "^0.10.3",
+    "babel-plugin-inline-dotenv": "^1.7.0",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}

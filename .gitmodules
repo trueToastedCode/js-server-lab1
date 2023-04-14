@@ -1,0 +1,28 @@
+[submodule "src/api-access/base-access"]
+	path = src/api-access/base-access
+	url = https://github.com/trueToastedCode/js-server-stuff.git
+	branch = api-access
+[submodule "src/api-access/make-access"]
+	path = src/api-access/make-access
+	url = https://github.com/trueToastedCode/js-server-stuff.git
+	branch = api-access
+[submodule "src/api-access/ms-user-api"]
+	path = src/api-access/ms-user-api
+	url = https://github.com/trueToastedCode/js-server-lab1.git
+	branch = ms-user-api-access
+[submodule "src/Id"]
+	path = src/Id
+	url = https://github.com/trueToastedCode/js-server-stuff.git
+	branch = Id
+[submodule "src/timeout"]
+	path = src/timeout
+	url = https://github.com/trueToastedCode/js-server-stuff.git
+	branch = timeout
+[submodule "src/user-entity"]
+	path = src/user-entity
+	url = https://github.com/trueToastedCode/js-server-lab1.git
+	branch = user-entity
+[submodule "src/Hash"]
+	path = src/Hash
+	url = https://github.com/trueToastedCode/js-server-stuff.git
+	branch = Hash

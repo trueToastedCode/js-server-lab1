@@ -8,7 +8,7 @@ export default function makeRegisterUser ({ addUser }) {
         { ...args, pubPGPKey: null },
         false, true, false
       )
-      delete user.password
+      user.password = null
       return {
         statusCode: 201,
         body: { user }

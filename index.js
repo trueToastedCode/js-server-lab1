@@ -19,19 +19,19 @@ export default function makeUserApi ({ makeApiAccess, makeUser }) {
     let result = await sendRPCMessage({
       message: `registerUser${JSON.stringify(info)}`
     })
-    result = proccessResult(result)
+    result = proccessResult(result, 201)
     return makeUser(
       result.body.user,
       true, false, true
     )
   }
 
-  function proccessResult (result) {
+  function proccessResult (result, expectedStatusCode) {
     if (!result) {
       throw new Error(`Result doesn't exist.`)
     }
     result = JSON.parse(result)
-    if (result.statusCode !== 200) {
+    if (result.statusCode !== expectedStatusCode) {
       throw new Error(result.body.error)
     }
     return result

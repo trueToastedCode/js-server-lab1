@@ -20,7 +20,10 @@ export default function makeUserApi ({ makeApiAccess, makeUser }) {
       message: `registerUser${JSON.stringify(info)}`
     })
     result = proccessResult(result)
-    return makeUser(result.body.user)
+    return makeUser(
+      result.body.user,
+      true, false, true
+    )
   }
 
   function proccessResult (result) {

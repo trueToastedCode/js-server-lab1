@@ -6,7 +6,7 @@ export default function makeRegisterUser ({ addUser }) {
       // set flag to create user as new to true
       const user = await addUser(
         { ...args, pubPGPKey: null },
-        false, true
+        false, true, false
       )
       delete user.password
       return {
